@@ -11,6 +11,7 @@ document.head.appendChild(link);
 
 const style = document.createElement("link");
 // style.href = "https://cdn.jsdelivr.net/gh/hanzbet-scripts/popup-roleta/index.css";
-style.href = "/index.css";
+style.href =
+  "https://cdn.jsdelivr.net/gh/hanzbet-scripts/popup-roleta/index.css";
 style.rel = "stylesheet";
 document.head.appendChild(style);
