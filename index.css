@@ -33,7 +33,7 @@
       rgba(50, 50, 50, 1) 50%);
   border: 2px solid rgba(0, 228, 56, 1);
   border-radius: 40px;
-  display: none;
+  display: flex;
   flex-direction: column;
   height: 661px;
   left: 50%;
@@ -107,7 +107,7 @@
 
 #thosijulio-popup-after {
   align-items: center;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   position: absolute;

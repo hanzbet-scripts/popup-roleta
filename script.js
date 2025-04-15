@@ -10,8 +10,8 @@ link.rel = "stylesheet";
 document.head.appendChild(link);
 
 const style = document.createElement("link");
-// style.href = "https://cdn.jsdelivr.net/gh/hanzbet-scripts/popup-roleta/index.css";
+// style.href = "https://cdn.jsdelivr.net/gh/hanzbet-scripts/popup-roleta@1015808947181f706b120c3eedf9f3780c3e5390/index.css";
 style.href =
-  "https://cdn.jsdelivr.net/gh/hanzbet-scripts/popup-roleta/index.css";
+  "https://cdn.jsdelivr.net/gh/hanzbet-scripts/popup-roleta@1015808947181f706b120c3eedf9f3780c3e5390/index.css";
 style.rel = "stylesheet";
 document.head.appendChild(style);
