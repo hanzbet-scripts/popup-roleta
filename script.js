@@ -34,7 +34,7 @@ style.innerHTML = `
   
   @media (max-width: 500px) {
     #thosijulio-popup-before, #thosijulio-popup-after {
-      width: 90% !important;
+      width: 90vw !important;
       height: auto !important;
     }
 
