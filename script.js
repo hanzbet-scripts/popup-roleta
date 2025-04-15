@@ -7,9 +7,7 @@ document.head.appendChild(link);
 const style = document.createElement("style");
 
 style.innerHTML = `
-.ekJXu:has(span:contains("Registrar com Google")) {
-  display: none !important;
-}
+
   #thosijulio-popup p, #thosijulio-popup h1, #thosijulio-popup h2 {
     margin: 0;
   }
@@ -38,6 +36,26 @@ style.innerHTML = `
     #thosijulio-popup-before, #thosijulio-popup-after {
       width: 90% !important;
       height: auto !important;
+    }
+
+    #thosijulio-popup p {
+      font-size: 16px !important;
+    }
+
+    #thosijulio-popup h1 {
+      font-size: 40px !important;
+    }
+
+    #thosijulio-roleta-container {
+      width: 281px;
+      height: 281px;
+    }
+
+    #thosijulio-popup-before > div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
   `;
