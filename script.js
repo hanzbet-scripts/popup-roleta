@@ -32,6 +32,14 @@ style.innerHTML = `
 
   #thosijulio-roleta {
     transition: transform 3s ease-out;
-  }`;
+  }
+  
+  @media (max-width: 500px) {
+    #thosijulio-popup-before, #thosijulio-popup-after {
+      width: 90%;
+      height: auto;
+    }
+  }
+  `;
 
 document.head.appendChild(style);
