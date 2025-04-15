@@ -7,6 +7,9 @@ document.head.appendChild(link);
 const style = document.createElement("style");
 
 style.innerHTML = `
+.ekJXu:has(span:contains("Registrar com Google")) {
+  display: none !important;
+}
   #thosijulio-popup p, #thosijulio-popup h1, #thosijulio-popup h2 {
     margin: 0;
   }
