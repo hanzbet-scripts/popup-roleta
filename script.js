@@ -47,15 +47,15 @@ style.innerHTML = `
     }
 
     #thosijulio-roleta-container {
-      width: 281px;
-      height: 281px;
+      width: 281px !important;
+      height: 281px !important;
     }
 
     #thosijulio-popup-before > div {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      position: absolute !important;
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;
     }
   }
   `;
