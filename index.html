@@ -1,58 +1,9 @@
-<div
-  id="thosijulio-popup"
-  style="
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    position: relative;
-    height: 100%;
-    width: 100%;
-  "
->
-  <div
-    id="thosijulio-popup-before"
-    style="
-      align-items: center;
-      background: linear-gradient(
-        180deg,
-        rgba(24, 24, 24, 1) 0%,
-        rgba(50, 50, 50, 1) 50%
-      );
-      border: 2px solid rgba(0, 228, 56, 1);
-      border-radius: 40px;
-      display: flex;
-      flex-direction: column;
-      height: 661px;
-      left: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 531px;
-    "
-  >
+<div id="thosijulio-popup">
+  <div id="thosijulio-popup-before">
     <p style="margin: 10px 0 0">GIRE AGORA E GANHE ATÉ</p>
-    <h1
-      style="
-        color: rgba(0, 228, 56, 1);
-        font-size: 64px;
-        font-weight: 800;
-        margin: -10px;
-      "
-    >
-      50 GIROS
-    </h1>
+    <h1>50 GIROS</h1>
     <p style="margin: 0">NO TIGRE SORTUDO</p>
-    <div
-      style="
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: -40px;
-        align-items: center;
-      "
-    >
+    <div id="thosijulio-popup-before-wrapper">
       <img
         src="https://raw.githubusercontent.com/hanzbet-scripts/popup-roleta/main/tigre.png"
         alt="tigre"
@@ -60,15 +11,7 @@
         width="381px"
         height="374px"
       />
-      <div
-        id="thosijulio-roleta-container"
-        style="
-          height: 417px;
-          margin-top: -240px;
-          position: relative;
-          width: 417px;
-        "
-      >
+      <div id="thosijulio-roleta-container">
         <img
           id="thosijulio-roleta"
           src="https://raw.githubusercontent.com/hanzbet-scripts/popup-roleta/main/roleta.png"
@@ -78,30 +21,13 @@
         />
         <img
           src="https://raw.githubusercontent.com/hanzbet-scripts/popup-roleta/main/marcador.png"
-          style="
-            position: absolute;
-            top: 50%;
-            left: -52px;
-            transform: translateY(-50%) scaleX(-1);
-          "
+          id="thosijulio-marcador"
           alt="marcador"
           width="211px"
           height="118px"
         />
         <button
           onclick="girarRoleta()"
-          style="
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: transparent;
-            height: 110px;
-            width: 110px;
-            border-radius: 100%;
-            cursor: pointer;
-            z-index: 2;
-          "
           id="thosijulio-botao-roleta"
           title=""
           type="button"
@@ -120,51 +46,23 @@
       </div>
     </div>
   </div>
-  <div
-    id="thosijulio-popup-after"
-    style="display: none; flex-direction: column; align-items: center"
-  >
+  <div id="thosijulio-popup-after">
     <img
       src="https://raw.githubusercontent.com/hanzbet-scripts/popup-roleta/main/tigre.png"
       alt="tigre"
+      id="thosijulio-tigre"
       width="465px"
       height="456px"
     />
-    <div
-      style="
-        align-items: center;
-        background: linear-gradient(45deg, #1b1b1b 0%, #292929 100%);
-        border: 2px solid rgba(0, 228, 56, 1);
-        border-radius: 40px;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        margin-top: -220px;
-        padding: 15px 40px;
-        box-sizing: border-box;
-        text-align: center;
-        width: 531px;
-      "
-    >
-      <h2 style="color: #00fe5a; font-size: 48px; font-weight: 700">
-        PARABÉNS
-      </h2>
+    <div>
+      <h2>PARABÉNS</h2>
       <p>Você foi presenteado</p>
       <div style="margin: 8px 0px 12px 0px">
         <p>Você acaba de ganhar</p>
         <p style="color: #00fe5a">30 Giros no Tigre Sortudo</p>
       </div>
 
-      <div
-        style="
-          font-size: 16px;
-          width: 100%;
-          max-width: 100%;
-          margin: 15px 0 40px 0;
-          box-sizing: border-box;
-          height: auto;
-        "
-      >
+      <div>
         <p>
           Complete agora mesmo a
           <span style="color: #00fe5a">verificação da sua conta</span> na
@@ -174,33 +72,12 @@
           >
         </p>
       </div>
-      <div
-        style="
-          background-color: #00e438;
-          border-radius: 12px;
-          color: white;
-          font-size: 24px;
-          font-weight: 700;
-          height: 52px;
-
-          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          width: 380px;
-        "
-      >
-        <p
-          onclick="document.getElementById('thosijulio-popup').style.display = 'none'"
-        >
+      <div>
+        <p onclick="document.getElementById('thosijulio-popup').remove()">
           CADASTRAR NA HANZBET
         </p>
       </div>
-      <p
-        style="
-          color: rgb(220, 220, 220);
-          font-size: 14px;
-          font-weight: 200;
-          margin: 10px 0 20px 0;
-        "
-      >
+      <p id="thosijulio-popup-after-disclaimer">
         O bônus pode levar até 3 horas para ser creditado.
       </p>
     </div>
