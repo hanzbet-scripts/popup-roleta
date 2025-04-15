@@ -36,8 +36,8 @@ style.innerHTML = `
   
   @media (max-width: 500px) {
     #thosijulio-popup-before, #thosijulio-popup-after {
-      width: 90%;
-      height: auto;
+      width: 90% !important;
+      height: auto !important;
     }
   }
   `;
